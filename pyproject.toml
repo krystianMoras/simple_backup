@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "simple_backup"
+version = "0.1.0"
+description = "Simple tool to dump all photos and videos to a single hard drive, organizes the files by month"
+authors = ["krystianMoras <krystianmoras@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
