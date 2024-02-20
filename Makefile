@@ -18,8 +18,8 @@ run:
 	$(POETRY) run python src/simple_backup/app.py
 
 build_exe:
-	$(POETRY) run pyinstaller --onefile --clean --name SimpleBackup src/simple_backup/app.py --windowed
+	$(POETRY) run pyinstaller --clean --name SimpleBackup src/simple_backup/app.py --windowed
 
 build_github_actions:
 	pip install pyinstaller==6.2.0 loguru==0.7.2
-	pyinstaller --onefile --clean --name SimpleBackup src/simple_backup/app.py --windowed
+	pyinstaller --clean --name SimpleBackup src/simple_backup/app.py --windowed
